@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Paint</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    
+    <script src="./shape_src/Cube.js"></script>
+    <script src="./src/ColoredPoints.js"></script>
+    
+  </body>
+  
+  <br>
+  <button type="button" id="on">Game</button>
+  <div class="slidecontainer">
+    <text>X Camera View</text>
+    <input type="range" min="0" max="360" value="0" class="slider" id="rot_camX" step=".000001">
+  </div>
+  <div class="slidecontainer">
+    <text>Y Camera View</text>
+    <input type="range" min="0" max="360" value="0" class="slider" id="rot_camZ" step=".000001">
+  </div>
+  <div class="slidecontainer">
+    <text>Z Camera View</text>
+    <input type="range" min="0" max="360" value="0" class="slider" id="rot_camY" step=".000001">
+  </div>
+</div>
+<p id="perf"></p>
+</html>

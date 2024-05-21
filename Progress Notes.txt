@@ -1,0 +1,4 @@
+-going over Circle.js
+-old file
+-make one change
+--3D verts now
