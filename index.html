@@ -14,6 +14,7 @@
     <script src="./lib/webgl-debug.js"></script>
     <script src="./lib/cuon-utils.js"></script>
     
+    <script src="./shape_src/Sphere.js"></script>
     <script src="./shape_src/Cube.js"></script>
     <script src="./src/ColoredPoints.js"></script>
     
@@ -21,6 +22,10 @@
   
   <br>
   <button type="button" id="on">Game</button>
+  <button type="button" id="norm_toggle">Normals</button>
+  <button type="button" id="light_toggle">Light</button>
+  
+  <button type="button" id="spotLight_toggle">Spotlight</button>
   <div class="slidecontainer">
     <text>X Camera View</text>
     <input type="range" min="0" max="360" value="0" class="slider" id="rot_camX" step=".000001">
@@ -32,6 +37,33 @@
   <div class="slidecontainer">
     <text>Z Camera View</text>
     <input type="range" min="0" max="360" value="0" class="slider" id="rot_camY" step=".000001">
+  </div>
+
+  
+  <div class="slidecontainer">
+    <text>X Light View</text>
+    <input type="range" min="0" max="10" value="0" class="slider" id="light_X" step="1">
+  </div>
+  <div class="slidecontainer">
+    <text>Y Light View</text>
+    <input type="range" min="0" max="100" value="0" class="slider" id="light_Y" step="1">
+  </div>
+  <div class="slidecontainer">
+    <text>Z Light View</text>
+    <input type="range" min="0" max="100" value="0" class="slider" id="light_Z" step="1">
+  </div>
+
+  <div class="slidecontainer">
+    <text>R Light Color</text>
+    <input type="range" min="0" max="256" value="255" class="slider" id="light_R" step="1">
+  </div>
+  <div class="slidecontainer">
+    <text>G Light Color</text>
+    <input type="range" min="0" max="255" value="255" class="slider" id="light_G" step="1">
+  </div>
+  <div class="slidecontainer">
+    <text>B Light Color</text>
+    <input type="range" min="0" max="255" value="255" class="slider" id="light_B" step="1">
   </div>
 </div>
 <p id="perf"></p>
